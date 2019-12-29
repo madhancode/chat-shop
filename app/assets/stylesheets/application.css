@@ -1,0 +1,177 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+ /*My hum... body.. yeah..*/
+ 
+body {
+	min-height: 100vh;
+    background-color: #232323;
+    margin: 0px;
+    font-family: 'roboto mono', monospace;
+}
+
+ h1 {
+     padding-top : 15px;
+     text-align: center;
+     font-size: 42px;
+     color : rgb(236, 236, 236);
+ }
+ 
+ small {
+     opacity: 0.5;
+     font-size: 0.7rem;
+ }
+ .navbar {
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+ 
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 10px 12px;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.navbar h2  {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.main {
+    margin-top: 50px;/* Used in this example to enable scrolling */
+    height: 2000px;
+}
+
+.banner {
+    height: fit-content;
+}
+ 
+ h2 {
+     color : #ffffff;
+     margin: 0;
+     padding: 0;
+     padding-top : 8px;
+     margin-right : 6px;
+     font-size : 20px;
+ }
+
+ #content {
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 0.5px solid #f1f1f1;
+    position: relative; 
+    left: 50%;
+    transform: translate(-50%, -200%);
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}    
+
+#blurredbackground {
+    overflow: hidden;
+    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px);
+}
+
+#blurredbackground img {
+    object-fit: cover;
+    object-position: 100% 0;
+	height: 480px;
+}
+
+.card:hover 
+{
+    color: #d3d3d3;
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+figure img {
+    object-fit: cover;
+    width: 300px;
+    height: 170px;
+	max-width: 100%;
+}
+
+.box-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1080px, 4fr));
+    padding: 10px;
+}
+	
+.card {
+	color: #d3d3d3;
+    margin: 25px;
+    margin-top: 40px;
+    width: 250px;
+	border-radius: 10px;
+	background-color: #272727;
+    border: 2px solid transparent;
+    box-shadow: 0 8px 16px -6px black;
+}
+
+.card:hover {
+	border: 2px solid rgb(175, 39, 253);
+}
+
+figure {
+    margin: 0%;
+    width: 100%;
+}
+
+.txt {
+	padding: 20px 30px 10px;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+p {
+	font-size: 13.5px;
+	font-weight: 500;
+	line-height: 1.1rem;
+	font-family: roboto;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background-color: rgb(175, 39, 253);
+}

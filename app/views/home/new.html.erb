@@ -1,0 +1,7 @@
+<% form_with model:@food, controller:"home", action:"create" do |f|%>
+<%= f.text_field :name %>
+<%= f.text_area :description %>
+<%= f.text_field :image %>
+
+<%= f.submit %>
+<% end %>

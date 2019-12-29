@@ -1,0 +1,26 @@
+<div class="banner">
+    <div id="blurredbackground">
+        <%= image_tag("title_bg2.jpg", :alt => "rss feed")%>
+    </div>
+    <div id="content">
+        <h1><%= @shop_name %></h1>
+    </div>
+</div>
+
+<div class="box-card">
+
+	<% @items.each do |item|%>
+		<br /><br />
+		<div class="card" title="<%= item.description %>">
+			<div class="content" >
+				<figure>
+					<img src=<%= item.image %> alt="">
+				</figure>
+				<div class="txt">
+					<h3><%= item.name %></h3>
+					<p><%= item.description %></p>
+				</div>
+			</div>
+		</div>
+	<% end %>
+</div>

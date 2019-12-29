@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChatShop</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="main">
+      <%= yield %>
+    </div>
+    <div class="navbar">
+      <h2>`Chaat House`</h2>
+      <%= link_to 'Admin', new_home_path %>
+    </div>
+  </body>
+</html>
