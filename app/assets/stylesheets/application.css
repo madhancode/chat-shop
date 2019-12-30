@@ -40,6 +40,9 @@ body {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    -webkit-box-shadow: 0 18px 18px 1px black;
+       -moz-box-shadow: 0 18px 18px 1px black;
+            box-shadow: 0 18px 18px 1px black;
 }
  
 .navbar a {
@@ -124,7 +127,8 @@ figure img {
 }
 
 .box-card {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(auto-fill, minmax(1080px, 4fr));
     padding: 10px;
 }
